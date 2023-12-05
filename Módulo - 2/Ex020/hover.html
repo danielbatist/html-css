@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p {
+            display: none;
+            /*Aqui no caso ele está usando o style para acessar o paragrafo que está dentro da div.*/
+        }
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            /*E aqui ele está usando o hover para poder alterar o estado o paragrafo que esta dentro da div, da para notar a diferença que está em baixo onde ele esta usando o hover para alterar a div inteira,aqui nesse caso ele está alterando somento o que está dentro da div sem o modificar a estrura da div.*/
+        }
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

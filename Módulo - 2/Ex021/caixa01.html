@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt0br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+</head>
+<style>
+    h1 {
+        background-color: lightgray;
+        height: 300px;
+        width: 300px;
+
+        border-width: 10px;
+        border-style: solid;
+        border-color: darkgray;
+        /*Essas 3 linhas de cima podem ser simplificadas por shorthands,que seria o border na ordem que está em baixo,primeiro width,depois style e depois color*/
+
+        border: 10px solid darkgray;
+
+       
+    
+        /*os padding tbm podem ser simplificados por shorthands, e eles seguem uma ordem com de um relogio,primeiro em cima ou top,depois right,bottom ou em baixo e depois left*/
+        /*Mais uma obs sobre o padding*/
+        /*podemos tambem na hora de configurar o padding se todos os valores forem iguais,como por exemplo: top 10px,right 10px,bottom 10px,left 10px, não precisa digitar os quatro valores pra cada basta colocar so um valor que ele entende automaticamente que todos teram o mesmo valor, agora se colocar dois valores diferentes como exemplo: 10px 20px, ele vai entender da seguinte maneira que em cima e em baixo ou seja o top e o bottom teram 10px e o right e left teram 20px.*/
+        padding: 10px;
+
+        margin: 20px 20px 40px 20px;
+
+        /*O margin segue o mesmo pricipio que de como está o padding em cima.*/
+
+        outline: 10px solid rgb(167, 136, 133);
+    }
+    a {
+        border-width: 10px;
+        border-style: solid;
+        border-color: red;
+    }
+</style>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Paragrafos tambem são exemplos de bos-level,mas os <a href="#">links são exemplos de cixas inline-level</a>, Vamos ver como tudo isso funciona</p>
+    
+</body>
+</html>

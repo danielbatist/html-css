@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url('Imagens/target001.png');
+            background-size: 100% 100%;
+
+            height: 96vh;
+            background-color: purple ;
+            padding: 10px;
+            position: relative; /*por padrão ele já é relativo*/
+        }
+        #conteudo {
+            background-image: url('Imagens/target001.png');
+            background-size: 100% 100%;
+            
+
+            height: 200px;
+            width: 400px;
+            background-color: yellow ;
+
+            position: absolute;
+            left: 50%;
+            top: 50%; /* a posição absoluta eu posso mudar em left e top para movimentar o box.
+            nesse exemplo ele usa 50% para left e top, porem ele não centraliza, ele fica 50% porem utilizar com referencia o canto superior esquerdo e ele alinha por essa referencia,por isso ele não fica totalmente no centro.*/
+
+            transform: translate(-50% , -50%); /* o transform é usado para mexer em qualquer box aplicando alguma alteração de transformação nela, usando o translate é para mexer na posição do meu box.*/
+           
+            
+            /*Essa configuração acima é para poder centralzar um box no meio da tela, alinhando ela de maneira vertical e horazontal.*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
